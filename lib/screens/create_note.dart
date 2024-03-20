@@ -5,7 +5,7 @@ class CreateNote extends StatefulWidget {
   const CreateNote({super.key, required this.onNewNoteCreated});
 
   final Function(Note) onNewNoteCreated;
-
+ 
   @override
   State<CreateNote> createState() => _CreateNoteState();
 }
@@ -17,11 +17,10 @@ class _CreateNoteState extends State<CreateNote> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold( 
       appBar: AppBar(
         title: const Text('New Note'),
       ),
-
       body: Padding(
         padding: const EdgeInsets.all(10.0),
         child: Column(
@@ -51,7 +50,7 @@ class _CreateNoteState extends State<CreateNote> {
         ),
       ),
 
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: OutlinedButton(
         onPressed: (){
           if(titleController.text.isEmpty){
             return;
@@ -68,7 +67,7 @@ class _CreateNoteState extends State<CreateNote> {
           widget.onNewNoteCreated(note);
           Navigator.of(context).pop();
         },
-        child: const Icon(Icons.save),
+        child: const Text('Save'),
       ),
     );
   }

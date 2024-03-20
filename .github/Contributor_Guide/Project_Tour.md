@@ -7,18 +7,18 @@ All the changes to be made are to be made in the files of 'lib' folder.
 If you want to change any dependencies then it has to be done in the 'pubspec.yaml' file.
 
 
-C:.
+C:
 |   .gitignore
 |   CODE_OF_CONDUCT.md
 |   commitlint.config.js
 |   package-lock.json
 |   package.json
 |   README.md
-    pubspec.lock
-    pubspec.yaml
-    roll_dice_app.iml
-    analysis_options.yaml
-    .metadata
+|    pubspec.lock
+|    pubspec.yaml
+|   roll_dice_app.iml
+|   analysis_options.yaml
+|    .metadata
 |
 +---.github
 |   +---Contributor_Guide
@@ -42,12 +42,12 @@ C:.
 |       pre-commit
 |
 +---lib
-    +---models
+    +---models/
            note_model.dart
-    +---screens
-           create_note.dart
-           home_screen.dart
-           notes_view.dart
-    +---widgets
+|    +---screens/
+         |  create_note.dart
+         |  home_screen.dart
+         | notes_view.dart
+|    +---widgets/
            note_card.dart             
-    main.dart
+|    main.dart

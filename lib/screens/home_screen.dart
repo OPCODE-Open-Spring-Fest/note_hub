@@ -17,10 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(" Note App"),
-      ),
-
+      
       body: ListView.builder(
         itemCount: notes.length,
         itemBuilder: (context, index){
@@ -43,7 +40,6 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onNoteDeleted(int index){
-    notes.removeAt(index);
-    setState(() {});
+    
   }
 }
