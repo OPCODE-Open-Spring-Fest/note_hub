@@ -22,7 +22,7 @@ The Note Hub App is a versatile and intuitive tool designed to streamline your n
 2. Navigate to the project directory:
 
     ```bash
-    cd Vedicheals
+    cd note_hub
     ```
 
 3. Install dependencies:
