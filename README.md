@@ -20,7 +20,7 @@ To set up **Note Hub** on your local machine, follow these steps:
 
 <<<<<<< HEAD
     ```bash
-    cd note_hub
+    cd Vedicheals
     ```
 =======
 >>>>>>> 798e885af37a5f1476571d888e1bb0379c723b3c
